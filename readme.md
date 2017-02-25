@@ -46,7 +46,7 @@ TODO:
 * Support teams
 * Support blacklisting operators 
 
-*If you have any **feature requests**, please open an issue*
+If you have *any* feature requests, *please* open an issue*
 
 ## Licensing
 
