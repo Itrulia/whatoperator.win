@@ -30,6 +30,7 @@ export class DefenderComponent extends OperatorComponent {
             {"name": "Caveira", "icon": "caveira"},
             {"name": "Echo", "icon": "echo"},
             {"name": "Mira", "icon": "mira"},
+            {"name": "Recruit", "icon": "recruit"},
         ];
     }
 

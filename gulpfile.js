@@ -88,6 +88,13 @@ gulp.task("styles", function () {
 gulp.task("images", function () {
     return gulp.src(config.paths.images.app)
         .pipe($.plumber())
+        // .pipe($.imageResize({
+        //     width : 125,
+        //     height : 125,
+        //     crop : true,
+        //     upscale : false,
+        //     imageMagick: true
+        // }))
         .pipe($.imagemin({
             optimizationLevel: 7,
             progressive: true
@@ -154,10 +161,10 @@ gulp.task("service-worker", ["service-worker-scripts"], function () {
         ],
 
         staticFileGlobs: [
-            rootDir + "/images/**/*",
             rootDir + "/scripts/**/*.js",
             rootDir + "/styles/**/*.css",
-            rootDir + "/*.html"
+            rootDir + "/images/*.png",
+            "./200.html"
         ],
 
         runtimeCaching: []
