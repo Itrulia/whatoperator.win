@@ -23,7 +23,7 @@ const postProcessor = [
 const del = require("del");
 const sequence = require("run-sequence").use(gulp);
 const $ = require("gulp-load-plugins")();
-const isProd = process.env.NODE_ENV !== "production";
+const isProd = process.env.NODE_ENV === "production";
 
 //////////////////////////////////////////
 /// Util

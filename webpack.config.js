@@ -1,5 +1,6 @@
 const path = require("path");
 const config = require("./gulpconfig.json");
+const aotLoader = require('@ultimate/aot-loader');
 
 module.exports = {
     cache: true,
@@ -21,9 +22,16 @@ module.exports = {
     },
     module: {
         rules: [
-            {test: /\.ts$/, use: ["awesome-typescript-loader?useCache=true", "angular2-template-loader"]},
+            {test: /\.ts$/, use: [
+                "@ultimate/aot-loader"
+            ]},
             {test: /\.html$/, use: ["raw-loader"]}
         ]
     },
-    plugins: []
+    plugins: [
+        new aotLoader.AotPlugin({
+            tsConfig: "./tsconfig.json",
+            entryModule: './app/scripts/whatoperator.module#WhatOperatorModule'
+        })
+    ]
 };
