@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #OPERATOR
+   ========================================================================== */
+
+.p-operator {
+  min-height: 100vh;
+}
+
+.p-operator__heading {
+  margin-bottom: 2em;
+}
+
+.p-operator__header {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.p-operator__avatar {
+  width: 8em;
+}
+
+.p-operator__name {
+  font-size: 1.75em;
+  font-family: "Anton", "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.p-operator__separator {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}

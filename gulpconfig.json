@@ -1,0 +1,23 @@
+{
+  "paths": {
+    "styles": {
+      "app": ["app/styles/*.scss"],
+      "watch": ["app/styles/**/*.scss"],
+      "dist": "dist/styles"
+    },
+    "images": {
+      "app": ["app/images/**/*"],
+      "watch": ["app/images/**/*"],
+      "dist": "dist/images"
+    },
+    "typescript": {
+      "app": "app/scripts/index.ts",
+      "watch": ["app/scripts/**/*.ts"],
+      "dist": "dist/scripts"
+    },
+    "workers": {
+      "app": "dist",
+      "dist": "dist/scripts/sw"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<main class="p-operator [ o-grid o-grid--center-vertical o-grid--center-horizontal ]">
+    <div class="p-operator__heading [ o-grid__item ]">
+        <h1 class="p-operator__header">You should play:</h1>
+    </div>
+
+    <div class="o-whisper-box">
+        <img src="/dist/images/operators/{{ operator.icon }}.png" alt="{{ operator.name }}'s Avatar" class="p-operator__avatar o-whisper-box__icon">
+
+        <div class="o-whisper-box__description p-operator__name">
+            {{ operator.name }}
+        </div>
+    </div>
+
+    <div class="o-grid__item u-text--center [ o-grid o-grid--center-horizontal o-grid--center-vertical ]">
+        <a [routerLink]="switchLink" class="o-flag o-flag--fit c-button" [ngClass]="
+            {'c-button--attacker': phase === 'defender', 'c-button--defender': phase === 'attacker'}
+        ">
+            <svg class="o-flag__figure c-button__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+            </svg>
+
+            <span class="o-flag__body" *ngIf="phase === 'attacker'">I'm a defender now</span>
+            <span class="o-flag__body" *ngIf="phase === 'defender'">I'm an attacker now</span>
+        </a>
+
+        <span class="p-operator__separator">|</span>
+
+        <button (click)="randomizeOperator()" class="o-flag o-flag--fit c-button" [ngClass]="
+            {'c-button--attacker': phase === 'attacker', 'c-button--defender': phase === 'defender'}
+        ">
+            <span class="o-flag__body">Generate new one</span>
+
+            <svg class="o-flag__figure c-button__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.1 13.34l2.83-2.83L3.91 3.5c-1.56 1.56-1.56 4.09 0 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/>
+            </svg>
+        </button>
+    </div>
+</main>

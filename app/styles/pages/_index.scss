@@ -1,0 +1,53 @@
+/* ==========================================================================
+   #INDEX
+   ========================================================================== */
+
+.p-index {
+  min-height: 100vh;
+}
+
+.p-index__heading {
+  margin-bottom: 3em;
+}
+
+.p-index__header {
+  text-align: center;
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.p-index__sub-header {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.p-index__sub-header__highlight {
+  color: #fed766;
+}
+
+.p-index__option {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 2em;
+
+  &:nth-of-type(odd) {
+    color: #f29559;
+    justify-content: flex-start;
+  }
+
+  &:nth-of-type(even) {
+    color: #476c9b;
+    justify-content: flex-end;
+  }
+}
+
+.p-index__separator {
+  font-size: 2em;
+  font-family: 'Anton', 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin: 0.5em;
+}

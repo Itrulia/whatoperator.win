@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #WHISPER BOX
+   ========================================================================== */
+
+.o-whisper-box {
+  padding: 2em;
+  font-weight: 600;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.o-whisper-box__icon {
+  fill: currentColor;
+  width: 2.5em;
+  margin-bottom: 1em;
+}
+
+.o-whisper-box__description {
+  text-align: center;
+}

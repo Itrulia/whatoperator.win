@@ -1,0 +1,10 @@
+# Folders
+.awcache
+.idea/
+node_modules/
+dist
+
+# Files
+.DS_Store
+npm-debug.log
+.vscode

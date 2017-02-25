@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #FLAG
+   ========================================================================== */
+
+/**
+ * The flag object is a design pattern similar to the media object, however it
+ * aligns it in the vertical middle
+ *
+ * http://csswizardry.com/2013/05/the-flag-object/
+ */
+
+.o-flag {
+  display: flex;
+  align-items: center;
+}
+
+.o-flag--fit {
+  display: inline-flex;
+}
+
+.o-flag__figure {
+  margin-right: 0.5em;
+  flex-grow: 0;
+  flex-shrink: 0;
+  line-height: 1;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.o-flag__body {
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  & > :last-child {
+    margin-bottom: 0;
+  }
+
+  + .o-flag__figure {
+    margin-left: 0.5em;
+    margin-right: 0;
+  }
+}
