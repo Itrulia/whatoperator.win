@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "What Operator",
+  "launch_path": "/200.html",
+  "description": "A Rainbox Six: Siege operator randomizer",
+  "icons": {
+    
+  },
+  "developer": {
+    "name": "Karl Merkli",
+    "url": "https://github/itrulia"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "What Operator",
+      "description": "A Rainbox Six: Siege operator randomizer"
+    }
+  }
+}
