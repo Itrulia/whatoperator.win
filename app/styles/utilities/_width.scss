@@ -23,3 +23,7 @@
 }
 
 @include grid-widths(1 2 3 4 5);
+
+@media (min-width: 720px) {
+  @include grid-widths(1 2 3 4 5, #{\@ + "tablet"});
+}

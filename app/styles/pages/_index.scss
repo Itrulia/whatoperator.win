@@ -32,7 +32,16 @@
 .p-index__option {
   display: flex;
   flex-flow: row wrap;
-  font-size: 2em;
+  font-size: 1em;
+  justify-content: center;
+
+  @media (min-width: 400px) {
+    font-size: 1.25em;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 2em;
+  }
 
   &:nth-of-type(odd) {
     color: #f29559;
@@ -46,8 +55,12 @@
 }
 
 .p-index__separator {
-  font-size: 2em;
-  font-family: 'Anton', 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-family: "Anton", "Roboto", sans-serif;
   text-transform: uppercase;
   margin: 0.5em;
+
+  @media (min-width: 720px) {
+    font-size: 2em;
+  }
 }
