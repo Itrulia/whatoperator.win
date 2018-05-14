@@ -1,7 +1,7 @@
 # Whatoperator.win
 > Rainbow Six: Siege operator randomizer
 
-[Whatoperator.win](https://whatoperator.win) will randomize your operator picks when you feel bored and don't know what to pick. It also allows to switch between attacker and defender after rounds.
+[Whatoperator.win](http://whatoperator.surge.sh) will randomize your operator picks when you feel bored and don't know what to pick. It also allows to switch between attacker and defender after rounds.
 
 ### Building
 
