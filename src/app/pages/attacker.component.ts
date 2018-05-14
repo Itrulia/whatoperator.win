@@ -5,12 +5,12 @@ import {OperatorComponent} from "./operator.component";
     templateUrl: "operator.component.html",
     styles: [`
         :host {
-            min-height: 100vh; 
+            min-height: 100vh;
         }
     `]
 })
 export class AttackerComponent extends OperatorComponent {
-    public readonly phase = "attacker";
+    public readonly phase: string = "attacker";
 
     constructor() {
         super();
