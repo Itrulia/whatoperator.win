@@ -9,19 +9,17 @@ A quick introduction of the minimal setup you need to get a hello world up &
 running.
 
 ```shell
-npm install && npm run dev
+npm install && npx ng serve
 ```
 
-This will install all the sites dependencies and will execute the Gulp + Webpack buildscript to generate the asset files and start the development server.
+This will install all the sites dependencies and will execute the Webpack buildscript to generate the asset files and start the development server.
 
 ## Developing
 
 The project is built using the following technologies:
 
-* Angular > 1
+* Angular 5
 * SASS
-* Webpack 2
-* Gulp 3
 
 It's recommended to atleast make you comfortable with Angular before.
 

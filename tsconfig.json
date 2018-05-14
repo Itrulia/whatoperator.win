@@ -1,23 +1,19 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
-    "target": "es5",
-    "module": "commonjs",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
     "declaration": false,
+    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "target": "es5",
     "typeRoots": [
-      "node_modules/@types",
-      "node_modules/ng-league/dist"
+      "node_modules/@types"
     ],
-    "types": [
-      "core-js",
-      "node",
-      "jasmine"
+    "lib": [
+      "es2017",
+      "dom"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

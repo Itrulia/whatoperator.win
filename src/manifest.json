@@ -1,0 +1,9 @@
+{
+  "name": "What Operator",
+  "short_name": "WhatOps",
+  "icons": [],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1d201f",
+  "theme_color": "#1d201f"
+}
